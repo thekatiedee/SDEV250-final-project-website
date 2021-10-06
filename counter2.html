@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Build Your Own House!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Build Your Own House!</h1>
+        </div>
+        <div id="desktop-nav">
+            <ul>
+                <li><a href="home.html">Welcome!</a></li>
+                &#8226;
+                <li><a href="index.html">How Much Should I Save?: Budget Calculator</a></li>
+                &#8226;
+                <li><a href="amenities.html">Choose Your Amenities + Lot</a></li>
+                &#8226;
+                <li><a href="counter2.html">Elapsed Time Calculator</a></li>
+                &#8226;
+                <li><a href="website-security.html">Website Security + Map</a></li>
+            </ul>
+        </div>
+        <div id="mobile-nav">
+            <ul>
+                <li><a href="home.html">Welcome!</a></li>
+                <li><a href="index.html">How Much Should I Save?: Budget Calculator</a></li>
+                <li><a href="amenities.html">Choose Your Amenities + Lot</a></li>
+                <li><a href="counter2.html">Elapsed Time Calculator</a></li>
+                <li><a href="website-security.html">Website Security + Map</a></li>
+            </ul>
+        </div>
+        
+        <div id="build-house">
+          <img id="house-gif" src="https://i.gifer.com/TaKy.gif">
+      </div>
+      <div id="counter-form">
+        <h2>Elapsed Time Calculator</h2>
+        <form name="myForm">
+                <label for="calculator">
+                    This calculator allows you to calculate the elapsed time between now and when you move into your new home, if you choose a date in the future.
+                </label>            
+            <fieldset>
+              <!-- date test -->
+              <label for="inputtedDate">
+                  Please choose a date.
+              </label>
+              <input type="date" id="inputtedDate"/>
+              <br>
+          </fieldset>
+            <fieldset>
+                <!-- calculate --> 
+                <p>Here is the time that's elapsed since your date:</p>
+                <button type="button" id="button" onclick="calculateDaysElapsed()">Calculate!</button>
+                <p id="printElapsed"></p>
+            </fieldset>
+        </form>
+      </div>
+    </div>
+    <script src="myScript-counter.js"></script>
+</body>
+</html>

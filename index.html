@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Build Your Own House!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Build Your Own House!</h1>
+        </div>
+        <div id="desktop-nav">
+            <ul>
+              <li><a href="home.html">Welcome!</a></li>
+              &#8226;
+              <li><a href="index.html">How Much Should I Save?: Budget Calculator</a></li>
+              &#8226;
+              <li><a href="amenities.html">Choose Your Amenities + Lot</a></li>
+              &#8226;
+              <li><a href="counter2.html">Elapsed Time Calculator</a></li>
+              &#8226;
+              <li><a href="website-security.html">Website Security + Map</a></li>
+            </ul>
+        </div>
+        <div id="mobile-nav">
+            <ul>
+              <li><a href="home.html">Welcome!</a></li>
+              <li><a href="index.html">How Much Should I Save?: Budget Calculator</a></li>
+              <li><a href="amenities.html">Choose Your Amenities + Lot</a></li>
+              <li><a href="counter2.html">Elapsed Time Calculator</a></li>
+              <li><a href="website-security.html">Website Security + Map</a></li>
+            </ul>
+        </div>
+        <!-- <div id="build-house">
+            <iframe src="https://giphy.com/embed/xUPGGuzpmG3jfeYWIg" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/house-home-moving-xUPGGuzpmG3jfeYWIg" target="_blank"></a></p>
+        </div> -->
+        <div id="build-house">
+          <img id="house-gif" src="https://media.giphy.com/media/xUPGGuzpmG3jfeYWIg/giphy.gif?cid=790b7611cafd5856679259041b2ab108d399df4ccdb5211d&rid=giphy.gif&ct=g">
+      </div>
+        <div id="budget-form">
+            <h2>Budget Calculator</h2>
+            <form>
+                <fieldset>
+                    <label for="price">
+                      How much is your house? (Numbers only - no commas, decimals, or special characters.)
+                    </label>
+                    <input type="number" id="price" pattern="/^[0-9]{1,7}$/"/>
+                  </fieldset>
+                <fieldset>
+                  <label for="years">
+                    For how many years is your fixed mortgage (ex: 15, 20, 30)?
+                  </label>
+                  <input type="number" id="years" min="0" max="60" pattern="/^[0-9]{1,3}$"/>
+                </fieldset>
+                <fieldset>
+                    <label for="downPayment">
+                      How much of a down payment will you put down (ex: enter 20% as '20'. Do not enter a percentage sign.)?
+                    </label>
+                    <input type="number" min="0" max="100" id="downPayment" pattern="/^[0-9]{1,3}$"/>
+                </fieldset>
+                <fieldset>
+                    <label for="interest">
+                      What is the interest rate? (ex: for 3% enter '3'. Do not enter a percentage sign.)
+                    </label>
+                    <input type="number" min="0" max="100" id="interest" pattern="/^[0-9]{1,3}$"/>
+                </fieldset>
+                <fieldset>
+                  <button type="button" id="button" onclick="calculateIt()">Calculate My Costs!</button>
+                </fieldset>
+                <fieldset>
+                    <p>These are your monthly housing costs:</p>
+                    <p style="font-size: .8em;"><i>Taxes, insurance, and HOA fees not included.</i></p>
+                   <p>$ <span id="total"></span></p>
+                 </fieldset>
+           </form>
+           <h2>Am I In Budget?</h2>
+           <form>
+               <fieldset>
+                   <label for="budgetInput">
+                     What is your monthly budget? (Numbers only - no commas, decimals, or special characters.)
+                   </label>
+                   <input type="number" id="budgetInput" pattern="/^[0-9]{1,7}$/"/>
+                 </fieldset>
+                 <fieldset>
+                  <button type="button" id="button" onclick='compareRates()'>Compare Rates</button>
+                </fieldset>
+                <fieldset>
+                  <p id='comparison'>&nbsp;</p>
+               </fieldset>
+            </form>     
+    </div>
+    <script src='myScript-budget.js'></script>
+</body>
+</html>

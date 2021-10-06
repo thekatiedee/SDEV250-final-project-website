@@ -1,0 +1,201 @@
+body {
+    background-color: #d7f5d7;
+  }
+
+#container {
+    margin: 0 auto;
+}
+
+#header {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+/* desktop nav */
+
+#container #desktop-nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.25em;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+    display: inline;
+    background-color: #38513b;
+
+}
+
+#container #desktop-nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: .5em;
+}
+
+/* hide mobile nav on desktop */
+
+@media screen and (min-width: 774px) {
+
+    #mobile-nav {
+        display: none;
+    }
+    
+}
+
+/* mobile nav */
+
+#mobile-nav {
+    max-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: gray;
+}
+
+#container #mobile-nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.25em;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+    border-radius: 8%;
+
+}
+
+#container #mobile-nav ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    padding: .5em;
+}
+
+/* hide desktop nav on mobile */
+
+@media screen and (max-width: 774px) {
+
+    #desktop-nav {
+        display: none;
+    }
+    
+}
+
+
+#build-house {
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    padding-top: 2em;
+}
+
+#house-gif {
+    width: 500px;
+    height: auto;
+}
+
+/*shrink house gif for mobile*/
+
+@media screen and (max-width: 450px) {
+    #house-gif {
+        width: 300px;
+        height: auto;
+    }
+}
+
+#budget-form h2 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#budget-form form {
+    font-family: Helvetica, sans-serif;
+    font-size: .9em;
+}
+
+#amenities-form {
+    font-family: Helvetica, sans-serif;
+    font-size: .9em;
+}
+
+#amenities-form h2 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#security {
+    text-align: center;
+}
+
+#navigator, #screen {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#web {
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+#counter-form h2 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#counter-form {
+    font-family: Helvetica, sans-serif;
+    /* text-align: center; */
+    padding-top: 1em;
+}
+
+#websecuritydoc p {
+    font-family: Helvetica, sans-serif;
+}
+
+#websecuritydoc li {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.85em;
+    padding-top: .75em;
+}
+
+#welcome h3 {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+#welcome p {
+    font-family: Helvetica, sans-serif;
+    padding-top: .75em;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    padding-top: .75em;
+}
+
+#latlongbut {
+    text-align: center;
+}
+
+/*results page*/
+
+#results h2, h3 {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+#map {
+    height: 500px;
+}
+
+#latitude, #longitude, #altitude, #failParagraph {
+    font-family: Helvetica, sans-serif;
+    padding-top: .75em;
+    font-size: 1em;
+}

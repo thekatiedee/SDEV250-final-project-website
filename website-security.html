@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn About Web Security with Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Learn About Web Security with Us</h1>
+        </div>
+        <div id="desktop-nav">
+            <ul>
+                <li><a href="home.html">Welcome!</a></li>
+                &#8226;
+                <li><a href="index.html">How Much Should I Save?: Budget Calculator</a></li>
+                &#8226;
+                <li><a href="amenities.html">Choose Your Amenities + Lot</a></li>
+                &#8226;
+                <li><a href="counter2.html">Elapsed Time Calculator</a></li>
+                &#8226;
+                <li><a href="website-security.html">Website Security + Map</a></li>
+            </ul>
+        </div>
+        <div id="mobile-nav">
+            <ul>
+                <li><a href="home.html">Welcome!</a></li>
+                <li><a href="index.html">How Much Should I Save?: Budget Calculator</a></li>
+                <li><a href="amenities.html">Choose Your Amenities + Lot</a></li>
+                <li><a href="counter2.html">Elapsed Time Calculator</a></li>
+                <li><a href="website-security.html">Website Security + Map</a></li>
+            </ul>
+        </div>
+        <div id = "security">
+            <iframe src="https://giphy.com/embed/RDZo7znAdn2u7sAcWH" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/SandiaLabs-cyber-security-cybersecurity-RDZo7znAdn2u7sAcWH"></a></p>
+        </div>
+        <div id="websecuritydoc">
+            <p>First off, did you know that the web and the internet are two different things?! What you refer to as the 'internet' is actually the web! See <a href="https://www.bbc.co.uk/newsround/47523993#:~:text=The%20world%20wide%20web%2C%20or,connect%20towns%20and%20cities%20together." target="_blank">here.</a></p>
+            <h3 id="navigator">The navigator object can obtain information about the current browser the user is using. Here we'll list out six properties you should be aware of as you browse the web.</h3>
+            <ul>
+                <li>"geolocation" - this can access the user's current location and user permissions settings can deny or allow access of that information.</li>
+                <li>"appName" - this displays the name of the web browser accessing the page.</li>
+                <li>"onLine" - whether the browser currently has a network connection.</li>
+                <li>"userAgent" - this is a string storedin the HTTP user-agent handler request; it contains information about the browser, platform name, and compatibility.</li>
+            </ul>
+            <h3 id="screen">The screen object is used to obtain information about the display screen's size, resolution, and color depth.</h3>
+            <ul>
+                <li>"height" - the height of the display screen.</li>
+                <li>"pixelDepth" - display screen's color resolution in bits per pixel.</li>
+            </ul>
+            <p>We have some tips for you to browse the web safely. They are:</p>
+            <ol>
+                <li>Keep your browser and any plugins updated, block pop-ups, and use an ad blocker. See more <a href="https://www.pandasecurity.com/en/mediacenter/mobile-news/tips-browsing-safer/" target="_blank">here.</a></li>
+                <li>"A VPN can help hide your identity, but doesn’t make you anonymous". As you learn from this article, some VPNs (Virtual Private Network) are better than others. Some services, like WireGuard, and Guardian Mobile Firewall, are higher ranked by <a href="https://techcrunch.com/2018/12/25/cybersecurity-101-guide-browse-web-securely-privately/" target="_blank">this team</a>.</li>
+                <li>"Avoid questionable website, especially those without HTTPS enabled." <a href="https://hackernoon.com/how-to-browse-the-internet-safely-d84e59d56057" target="_blank">This page</a> dives into some tips for safely browsing the web, including updating your software ofter (especially updating systems to patch security vulnerabilities). They also dive into the question "what are you protecting yourself from?" and talk about advertisers and hackers.</li>
+            </ol>
+        </div>
+        <div id ="location">
+            <p>Your location, based on your IP address, is as follows:</p>
+            <div id="latitude"></div>
+            <div id="longitude"></div>
+            <div id="altitude"></div>
+            <div id="failParagraph"></div>
+            <button type="button" onclick="findLatLong()">Find my Coordinates!</button>
+        </div>
+        <p><i>Note: Google is finicky and requires API keys to display your exact location.</i></p>
+        <button type="button" onclick="displayMap()">Display my Map!</button>
+        <div id="map">
+        </div>
+        </div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+        <script src="myScript-security.js"></script>
+</body>
+</html>
